@@ -80,6 +80,13 @@ def adj_n(matchObj8, adj):
                 yield "Art_choice \t %s %s" % (matchObj9.start(), matchObj9.end()) + '\t' + i + '\n'
 
 def main():
+##    pathes = []
+##    for d, dirs, files in os.walk('/Users/elenaemelanova/Downloads/filespath'):
+##        for f in files:
+##            path = os.path.join(d,f)
+##            pathes.append(path)
+##    for i in pathes:
+##        text = i
     with open(u'essay.txt') as work:
         line = work.read().decode('utf-8')        
         matchObj8 = re.sub('\.', '.\n', line)
